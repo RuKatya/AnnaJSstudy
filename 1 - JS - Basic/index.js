@@ -134,3 +134,24 @@
 // Read a temperature in Celsius from the user, and print it converted to Fahrenheit.
 // Read a number from the user for distance and a number for speed and print the time. time = distance/speed
 
+function calSpeed(dist, time) {
+    console.log(`Distance (km): ${dist}`);
+    console.log(`Time (hr): ${time}`);
+    return dist / time;
+}
+
+console.log(calSpeed(5, 2))
+
+function cTOf(Celsius) {
+    // let cTemp = Celsius;
+    // let cToFarh = cTemp * 9 / 5 + 32;
+    let cToFarh = Celsius * 9 / 5 + 32;
+    // let result = cTemp + ' 35 is' + cToFarh + 'x';
+    let result = `${Celsius}c is ${cToFarh}f`;
+    console.log(result);
+}
+
+cTOf(0)
+
+const name = 'I am the best';
+console.log(name);
